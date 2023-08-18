@@ -1,2 +1,2 @@
 # gitdemoprivate
-This is my private repo
+This is my public repo
