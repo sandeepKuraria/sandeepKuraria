@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country-Table</title>
+    <style>
+      .nav {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        background-color: rgb(46, 46, 46);
+      }
+      .nav > div > a {
+        text-decoration: none;
+      }
+
+      .left-logo-nav {
+        margin-left: 80px;
+      }
+      .mid-nav {
+        margin: 0px 400px;
+      }
+      .right-nav {
+        margin-top: 20px;
+      }
+      .right-nav > a {
+        color: white;
+        margin: 0px 10px;
+      }
+      .right-nav > a:hover {
+        color: rgb(47, 140, 47);
+      }
+
+      .table-head {
+        background-color: rgb(218, 139, 42);
+      }
+      .number {
+        background-color: aqua;
+      }
+      .state-name {
+        background-color: green;
+      }
+      .city-name {
+        background-color: tomato;
+      }
+      .table1 {
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav class="nav">
+        <div class="left-logo-nav">
+          <a href="./country.html"
+            ><img
+              src="./logo/home.png"
+              alt="Home logo"
+              width="50px"
+              height="50px"
+          /></a>
+        </div>
+        <div class="mid-nav"></div>
+        <div class="right-nav">
+          <a href="./country.html"> Home</a>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <div>
+        <table border="1" class="table1">
+          <tr class="table-head">
+            <th>No.</th>
+            <th>StateName</th>
+            <th colspan="25">CityName</th>
+          </tr>
+          <tr>
+            <td class="number">1.</td>
+            <td class="state-name">
+              Andaman and Nicobar Islands (union territory)
+            </td>
+            <td colspan="25" class="city-name">Port Blair.</td>
+          </tr>
+          <tr>
+            <td class="number">2.</td>
+            <td class="state-name">Andhra Pradesh</td>
+            <td colspan="25" class="city-name">
+              Adoni, Amaravati, Anantapur, Chandragiri, Chittoor, Dowlaiswaram,
+              Eluru, Guntur, Kadapa, Kakinada, Kurnool, Machilipatnam,
+              Nagarjunakoṇḍa, Rajahmundry, Srikakulam, Tirupati, Vijayawada,
+              Visakhapatnam, Vizianagaram, Yemmiganur.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">3.</td>
+            <td class="state-name">Arunachal Pradesh</td>
+            <td colspan="25" class="city-name">Itanagar.</td>
+          </tr>
+          <tr>
+            <td class="number">4.</td>
+            <td class="state-name">Assam</td>
+            <td colspan="25" class="city-name">
+              Dhuburi Dibrugarh Dispur Guwahati Jorhat Nagaon Sivasagar Silchar
+              Tezpur Tinsukia.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">5.</td>
+            <td class="state-name">Bihar</td>
+            <td colspan="25" class="city-name">
+              Ara, Barauni, Begusarai, Bettiah, Bhagalpur, Bihar Sharif, Bodh
+              Gaya, Buxar, Chapra, Darbhanga, Dehri, Dinapur Nizamat, Gaya,
+              Hajipur, Jamalpur, Katihar, Madhubani, Motihari, Munger,
+              Muzaffarpur, Patna, Purnia, Pusa, Saharsa, Samastipur, Sasaram,
+              Sitamarhi, Siwan.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">6.</td>
+            <td class="state-name">Chandigarh (union territory)</td>
+            <td colspan="25" class="city-name">Chandigarh.</td>
+          </tr>
+          <tr>
+            <td class="number">7.</td>
+            <td class="state-name">Chhattisgarh</td>
+            <td colspan="25" class="city-name">
+              Ambikapur, Bhilai, Bilaspur, Dhamtari, Durg, Jagdalpur, Raipur,
+              Rajnandgaon.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">8.</td>
+            <td class="state-name">
+              Dadra and Nagar Haveli and Daman and Diu (union territory)
+            </td>
+            <td colspan="25" class="city-name">Daman, Diu, Silvassa.</td>
+          </tr>
+          <tr>
+            <td class="number">9.</td>
+            <td class="state-name">Delhi (national capital territory)</td>
+            <td colspan="25" class="city-name">Delhi, New Delhi.</td>
+          </tr>
+          <tr>
+            <td class="number">10.</td>
+            <td class="state-name">Goa</td>
+            <td colspan="25" class="city-name">Madgaon, Panaji.</td>
+          </tr>
+          <tr>
+            <td class="number">11.</td>
+            <td class="state-name">Gujarat</td>
+            <td colspan="25" class="city-name">
+              Ahmadabad, Amreli, Bharuch, Bhavnagar, Bhuj, Dwarka, Gandhinagar,
+              Godhra, Jamnagar, Junagadh, Kandla, Khambhat, Kheda, Mahesana,
+              Morbi, Nadiad, Navsari, Okha, Palanpur, Patan, Porbandar, Rajkot,
+              Surat, Surendranagar, Valsad, Veraval.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">12.</td>
+            <td class="state-name">Haryana</td>
+            <td colspan="25" class="city-name">
+              Ambala, Bhiwani, Chandigarh, Faridabad, Firozpur Jhirka, Gurugram,
+              Hansi, Hisar, Jind, Kaithal, Karnal, Kurukshetra, Panipat, Pehowa,
+              Rewari, Rohtak, Sirsa, Sonipat.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">13.</td>
+            <td class="state-name">Himachal Pradesh</td>
+            <td colspan="25" class="city-name">
+              Bilaspur, Chamba, Dalhousie, Dharmshala, Hamirpur, Kangra, Kullu,
+              Mandi, Nahan, Shimla, Una.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">14.</td>
+            <td class="state-name">Jammu and Kashmir (union territory)</td>
+            <td colspan="25" class="city-name">
+              Anantnag, Baramula, Doda, Gulmarg, Jammu, Kathua, Punch, Rajouri,
+              Srinagar, Udhampur.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">15.</td>
+            <td class="state-name">Jharkhand</td>
+            <td colspan="25" class="city-name">
+              Bokaro Chaibasa Deoghar Dhanbad Dumka Giridih Hazaribag Jamshedpur
+              Jharia Rajmahal Ranchi Saraikela.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">16.</td>
+            <td class="state-name">Karnataka</td>
+            <td colspan="25" class="city-name">
+              Badami, Ballari, Bengaluru, Belagavi, Bhadravati, Bidar,
+              Chikkamagaluru, Chitradurga, Davangere, Halebid, Hassan,
+              Hubballi-Dharwad, Kalaburagi, Kolar, Madikeri, Mandya, Mangaluru,
+              Mysuru, Raichur, Shivamogga, Shravanabelagola, Shrirangapattana,
+              Tumakuru, Vijayapura.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">17.</td>
+            <td class="state-name">Kerala</td>
+            <td colspan="25" class="city-name">
+              Alappuzha, Vatakara, Idukki, Kannur, Kochi, Kollam, Kottayam,
+              Kozhikode, Mattancheri, Palakkad, Thalassery, Thiruvananthapuram,
+              Thrissur.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">18.</td>
+            <td class="state-name">Ladakh (union territory)</td>
+            <td colspan="25" class="city-name">Kargil, Leh.</td>
+          </tr>
+          <tr>
+            <td class="number">19.</td>
+            <td class="state-name">Madhya Pradesh</td>
+            <td colspan="25" class="city-name">
+              Balaghat, Barwani, Betul, Bharhut, Bhind, Bhojpur, Bhopal,
+              Burhanpur, Chhatarpur, Chhindwara, Damoh, Datia, Dewas, Dhar, Dr.
+              Ambedkar Nagar (Mhow), Guna, Gwalior, Hoshangabad, Indore, Itarsi,
+              Jabalpur, Jhabua, Khajuraho, Khandwa, Khargone, Maheshwar, Mandla,
+              Mandsaur, Morena, Murwara, Narsimhapur, Narsinghgarh, Narwar,
+              Neemuch, Nowgong, Orchha, Panna, Raisen, Rajgarh, Ratlam, Rewa,
+              Sagar, Sarangpur, Satna, Sehore, Seoni, Shahdol, Shajapur,
+              Sheopur, Shivpuri, Ujjain, Vidisha.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">20.</td>
+            <td class="state-name">Maharashtra</td>
+            <td colspan="25" class="city-name">
+              Ahmadnagar, Akola, Amravati, Aurangabad, Bhandara, Bhusawal, Bid,
+              Buldhana, Chandrapur, Daulatabad, Dhule, Jalgaon, Kalyan, Karli,
+              Kolhapur, Mahabaleshwar, Malegaon, Matheran, Mumbai, Nagpur,
+              Nanded, Nashik, Osmanabad, Pandharpur, Parbhani, Pune, Ratnagiri,
+              Sangli, Satara, Sevagram, Solapur, Thane, Ulhasnagar, Vasai-Virar,
+              Wardha, Yavatmal.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">21.</td>
+            <td class="state-name">Manipur</td>
+            <td colspan="25" class="city-name">Imphal.</td>
+          </tr>
+          <tr>
+            <td class="number">22.</td>
+            <td class="state-name">Meghalaya</td>
+            <td colspan="25" class="city-name">Cherrapunji, Shillong.</td>
+          </tr>
+          <tr>
+            <td class="number">23.</td>
+            <td class="state-name">Mizoram</td>
+            <td colspan="25" class="city-name">Aizawl, Lunglei.</td>
+          </tr>
+          <tr>
+            <td class="number">24.</td>
+            <td class="state-name">Nagaland</td>
+            <td colspan="25" class="city-name">
+              Kohima, Mon, Phek, Wokha, Zunheboto.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">25.</td>
+            <td class="state-name">Odisha</td>
+            <td colspan="25" class="city-name">
+              Balangir, Baleshwar, Baripada, Bhubaneshwar, Brahmapur, Cuttack,
+              Dhenkanal, Kendujhar, Konark, Koraput, Paradip, Phulabani, Puri,
+              Sambalpur, Udayagiri.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">26.</td>
+            <td class="state-name">Puducherry (union territory)</td>
+            <td colspan="25" class="city-name">
+              Karaikal, Mahe, Puducherry, Yanam.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">27.</td>
+            <td class="state-name">Punjab</td>
+            <td colspan="25" class="city-name">
+              Amritsar, Batala, Chandigarh, Faridkot, Firozpur, Gurdaspur,
+              Hoshiarpur, Jalandhar, Kapurthala, Ludhiana, Nabha, Patiala,
+              Rupnagar, Sangrur.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">28.</td>
+            <td class="state-name">Rajasthan</td>
+            <td colspan="25" class="city-name">
+              Abu, Ajmer, Alwar, Amer, Barmer, Beawar, Bharatpur, Bhilwara,
+              Bikaner, Bundi, Chittaurgarh, Churu, Dhaulpur, Dungarpur,
+              Ganganagar, Hanumangarh, Jaipur, Jaisalmer, Jalor, Jhalawar,
+              Jhunjhunu, Jodhpur, Kishangarh, Kota, Merta, Nagaur, Nathdwara,
+              Pali, Phalodi, Pushkar, Sawai Madhopur, Shahpura, Sikar, Sirohi,
+              Tonk, Udaipur.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">29.</td>
+            <td class="state-name">Sikkim</td>
+            <td colspan="25" class="city-name">
+              Gangtok, Gyalshing, Lachung, Mangan.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">30.</td>
+            <td class="state-name">Tamil Nadu</td>
+            <td colspan="25" class="city-name">
+              Arcot, Chengalpattu, Chennai, Chidambaram, Coimbatore, Cuddalore,
+              Dharmapuri, Dindigul, Erode, Kanchipuram, Kanniyakumari,
+              Kodaikanal, Kumbakonam, Madurai, Mamallapuram, Nagappattinam,
+              Nagercoil, Palayamkottai, Pudukkottai, Rajapalayam,
+              Ramanathapuram, Salem, Thanjavur, Tiruchchirappalli, Tirunelveli,
+              Tiruppur, Thoothukudi, Udhagamandalam, Vellore.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">31.</td>
+            <td class="state-name">Telangana</td>
+            <td colspan="25" class="city-name">
+              Hyderabad, Karimnagar, Khammam, Mahbubnagar, Nizamabad,
+              Sangareddi, Warangal.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">32.</td>
+            <td class="state-name">Tripura</td>
+            <td colspan="25" class="city-name">Agartala.</td>
+          </tr>
+          <tr>
+            <td class="number">33.</td>
+            <td class="state-name">Uttar Pradesh</td>
+            <td colspan="25" class="city-name">
+              Agra, Aligarh, Amroha, Ayodhya, Azamgarh, Bahraich, Ballia, Banda,
+              Bara Banki, Bareilly, Basti, Bijnor, Bithur, Budaun, Bulandshahr,
+              Deoria, Etah, Etawah, Faizabad, Farrukhabad-cum-Fatehgarh,
+              Fatehpur, Fatehpur Sikri, Ghaziabad, Ghazipur, Gonda, Gorakhpur,
+              Hamirpur, Hardoi, Hathras, Jalaun, Jaunpur, Jhansi, Kannauj,
+              Kanpur, Lakhimpur, Lalitpur, Lucknow, Mainpuri, Mathura, Meerut,
+              Mirzapur-Vindhyachal, Moradabad, Muzaffarnagar, Pratapgarh,
+              Pilibhit, Prayagraj, Rae Bareli, Rampur, Saharanpur, Sambhal,
+              Shahjahanpur, Sitapur, Sultanpur, Tehri, Varanasi.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">34.</td>
+            <td class="state-name">Uttarakhand</td>
+            <td colspan="25" class="city-name">
+              Almora, Dehradun, Haridwar, Mussoorie, Nainital, Pithoragarh.
+            </td>
+          </tr>
+          <tr>
+            <td class="number">35.</td>
+            <td class="state-name">West Bengal</td>
+            <td colspan="25" class="city-name">
+              Alipore, Alipur Duar, Asansol, Baharampur, Bally, Balurghat,
+              Bankura, Baranagar, Barasat, Barrackpore, Basirhat, Bhatpara,
+              Bishnupur, Budge Budge, Burdwan, Chandernagore, Darjeeling,
+              Diamond Harbour, Dum Dum, Durgapur, Halisahar, Haora, Hugli,
+              Ingraj Bazar, Jalpaiguri, Kalimpong, Kamarhati, Kanchrapara,
+              Kharagpur, Cooch Behar, Kolkata, Krishnanagar, Malda, Midnapore,
+              Murshidabad, Nabadwip, Palashi, Panihati, Purulia, Raiganj,
+              Santipur, Shantiniketan, Shrirampur, Siliguri, Siuri, Tamluk,
+              Titagarh.
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>

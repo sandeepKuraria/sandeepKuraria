@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>assignment3a</title>
+    <style>
+      .nav {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        background-color: rgb(46, 46, 46);
+      }
+      .nav > div > a {
+        text-decoration: none;
+      }
+      .left-logo-nav {
+        margin-left: 80px;
+      }
+      .mid-nav {
+        margin: 0px 400px;
+      }
+      .right-nav {
+        margin-top: 20px;
+      }
+      .right-nav > a {
+        color: white;
+        margin: 0px 10px;
+      }
+      .right-nav > a:hover {
+        color: green;
+      }
+      .sub-heading > p {
+        margin-left: 150px;
+        padding-top: 80px;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .main-state-city {
+        margin-left: 150px;
+      }
+      .state > p {
+        font-size: 40px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgb(38, 97, 94);
+      }
+      .footer {
+        margin-top: 30px;
+        margin-left: 150px;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        color: rgb(27, 113, 242);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav class="nav">
+        <div class="left-logo-nav">
+          <a href="./country.html"
+            ><img
+              src="./logo/home.png"
+              alt="Home logo"
+              width="50px"
+              height="50px"
+          /></a>
+        </div>
+        <div class="mid-nav"></div>
+        <div class="right-nav">
+          <a href="./country.html"> Home</a>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
+        </div>
+      </nav>
+    </section>
+
+    <section>
+      <div class="sub-heading"><p>list of cities and towns in India</p></div>
+    </section>
+
+    <section>
+      <div class="main-state-city">
+        <div class="state">
+          <p>Andaman and Nicobar Islands (union territory)</p>
+          <div class="cities">
+            <div>Port Blair</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Andhra Pradesh</p>
+          <div class="cities">
+            <div>Adoni</div>
+            <div>Amaravati</div>
+            <div>Anantapur</div>
+            <div>Chandragiri</div>
+            <div>Chittoor</div>
+            <div>Dowlaiswaram</div>
+            <div>Eluru</div>
+            <div>Guntur</div>
+            <div>Kadapa</div>
+            <div>Kakinada</div>
+            <div>Kurnool</div>
+            <div>Machilipatnam</div>
+            <div>Nagarjunakoṇḍa</div>
+            <div>Rajahmundry</div>
+            <div>Srikakulam</div>
+            <div>Tirupati</div>
+            <div>Vijayawada</div>
+            <div>Visakhapatnam</div>
+            <div>Vizianagaram</div>
+            <div>Yemmiganur</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Arunachal Pradesh</p>
+          <div class="cities">
+            <div>Itanagar</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Assam</p>
+          <div class="cities">
+            <div>Dhuburi</div>
+            <div>Dibrugarh</div>
+            <div>Dispur</div>
+            <div>Guwahati</div>
+            <div>Jorhat</div>
+            <div>Nagaon</div>
+            <div>Sivasagar</div>
+            <div>Silchar</div>
+            <div>Tezpur</div>
+            <div>Tinsukia</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Bihar</p>
+          <div class="cities">
+            <div>Ara</div>
+            <div>Barauni</div>
+            <div>Begusarai</div>
+            <div>Bettiah</div>
+            <div>Bhagalpur</div>
+            <div>Bihar Sharif</div>
+            <div>Bodh Gaya</div>
+            <div>Buxar</div>
+            <div>Chapra</div>
+            <div>Darbhanga</div>
+            <div>Dehri</div>
+            <div>Dinapur Nizamat</div>
+            <div>Gaya</div>
+            <div>Hajipur</div>
+            <div>Jamalpur</div>
+            <div>Katihar</div>
+            <div>Madhubani</div>
+            <div>Motihari</div>
+            <div>Munger</div>
+            <div>Muzaffarpur</div>
+            <div>Patna</div>
+            <div>Purnia</div>
+            <div>Pusa</div>
+            <div>Saharsa</div>
+            <div>Samastipur</div>
+            <div>Sasaram</div>
+            <div>Sitamarhi</div>
+            <div>Siwan</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Chandigarh (union territory)</p>
+          <div class="cities">
+            <div>Chandigarh</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Chhattisgarh</p>
+          <div class="cities">
+            <div>Ambikapur</div>
+            <div>Bhilai</div>
+            <div>Bilaspur</div>
+            <div>Dhamtari</div>
+            <div>Durg</div>
+            <div>Jagdalpur</div>
+            <div>Raipur</div>
+            <div>Rajnandgaon</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Dadra and Nagar Haveli and Daman and Diu (union territory)</p>
+          <div class="cities">
+            <div>Daman</div>
+            <div>Diu</div>
+            <div>Silvassa</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Delhi (national capital territory)</p>
+          <div class="cities">
+            <div>Delhi</div>
+            <div>New Delhi</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Goa</p>
+          <div class="cities">
+            <div>Madgaon</div>
+            <div>Panaji</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Gujarat</p>
+          <div class="cities">
+            <div>Ahmadabad</div>
+            <div>Amreli</div>
+            <div>Bharuch</div>
+            <div>Bhavnagar</div>
+            <div>Bhuj</div>
+            <div>Dwarka</div>
+            <div>Gandhinagar</div>
+            <div>Godhra</div>
+            <div>Jamnagar</div>
+            <div>Junagadh</div>
+            <div>Kandla</div>
+            <div>Khambhat</div>
+            <div>Kheda</div>
+            <div>Mahesana</div>
+            <div>Morbi</div>
+            <div>Nadiad</div>
+            <div>Navsari</div>
+            <div>Okha</div>
+            <div>Palanpur</div>
+            <div>Patan</div>
+            <div>Porbandar</div>
+            <div>Rajkot</div>
+            <div>Surat</div>
+            <div>Surendranagar</div>
+            <div>Valsad</div>
+            <div>Veraval</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Haryana</p>
+          <div class="cities">
+            <div>Ambala</div>
+            <div>Bhiwani</div>
+            <div>Chandigarh</div>
+            <div>Faridabad</div>
+            <div>Firozpur Jhirka</div>
+            <div>Gurugram</div>
+            <div>Hansi</div>
+            <div>Hisar</div>
+            <div>Jind</div>
+            <div>Kaithal</div>
+            <div>Karnal</div>
+            <div>Kurukshetra</div>
+            <div>Panipat</div>
+            <div>Pehowa</div>
+            <div>Rewari</div>
+            <div>Rohtak</div>
+            <div>Sirsa</div>
+            <div>Sonipat</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Himachal Pradesh</p>
+          <div class="cities">
+            <div>Bilaspur</div>
+            <div>Chamba</div>
+            <div>Dalhousie</div>
+            <div>Dharmshala</div>
+            <div>Hamirpur</div>
+            <div>Kangra</div>
+            <div>Kullu</div>
+            <div>Mandi</div>
+            <div>Nahan</div>
+            <div>Shimla</div>
+            <div>Una</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Jammu and Kashmir (union territory)</p>
+          <div class="cities">
+            <div>Anantnag</div>
+            <div>Baramula</div>
+            <div>Doda</div>
+            <div>Gulmarg</div>
+            <div>Jammu</div>
+            <div>Kathua</div>
+            <div>Punch</div>
+            <div>Rajouri</div>
+            <div>Srinagar</div>
+            <div>Udhampur</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Jharkhand</p>
+          <div class="cities">
+            <div>Bokaro</div>
+            <div>Chaibasa</div>
+            <div>Deoghar</div>
+            <div>Dhanbad</div>
+            <div>Dumka</div>
+            <div>Giridih</div>
+            <div>Hazaribag</div>
+            <div>Jamshedpur</div>
+            <div>Jharia</div>
+            <div>Rajmahal</div>
+            <div>Ranchi</div>
+            <div>Saraikela</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Karnataka</p>
+          <div class="cities">
+            <div>Badami</div>
+            <div>Ballari</div>
+            <div>Bengaluru</div>
+            <div>Belagavi</div>
+            <div>Bhadravati</div>
+            <div>Bidar</div>
+            <div>Chikkamagaluru</div>
+            <div>Chitradurga</div>
+            <div>Davangere</div>
+            <div>Halebid</div>
+            <div>Hassan</div>
+            <div>Hubballi-Dharwad</div>
+            <div>Kalaburagi</div>
+            <div>Kolar</div>
+            <div>Madikeri</div>
+            <div>Mandya</div>
+            <div>Mangaluru</div>
+            <div>Mysuru</div>
+            <div>Raichur</div>
+            <div>Shivamogga</div>
+            <div>Shravanabelagola</div>
+            <div>Shrirangapattana</div>
+            <div>Tumakuru</div>
+            <div>Vijayapura</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Kerala</p>
+          <div class="cities">
+            <div>Alappuzha</div>
+            <div>Vatakara</div>
+            <div>Idukki</div>
+            <div>Kannur</div>
+            <div>Kochi</div>
+            <div>Kollam</div>
+            <div>Kottayam</div>
+            <div>Kozhikode</div>
+            <div>Mattancheri</div>
+            <div>Palakkad</div>
+            <div>Thalassery</div>
+            <div>Thiruvananthapuram</div>
+            <div>Thrissur</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Ladakh (union territory)</p>
+          <div class="cities">
+            <div>Kargil</div>
+            <div>Leh</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Madhya Pradesh</p>
+          <div class="cities">
+            <div>Balaghat</div>
+            <div>Barwani</div>
+            <div>Betul</div>
+            <div>Bharhut</div>
+            <div>Bhind</div>
+            <div>Bhojpur</div>
+            <div>Bhopal</div>
+            <div>Burhanpur</div>
+            <div>Chhatarpur</div>
+            <div>Chhindwara</div>
+            <div>Damoh</div>
+            <div>Datia</div>
+            <div>Dewas</div>
+            <div>Dhar</div>
+            <div>Dr. Ambedkar Nagar (Mhow)</div>
+            <div>Guna</div>
+            <div>Gwalior</div>
+            <div>Hoshangabad</div>
+            <div>Indore</div>
+            <div>Itarsi</div>
+            <div>Jabalpur</div>
+            <div>Jhabua</div>
+            <div>Khajuraho</div>
+            <div>Khandwa</div>
+            <div>Khargone</div>
+            <div>Maheshwar</div>
+            <div>Mandla</div>
+            <div>Mandsaur</div>
+            <div>Morena</div>
+            <div>Murwara</div>
+            <div>Narsimhapur</div>
+            <div>Narsinghgarh</div>
+            <div>Narwar</div>
+            <div>Neemuch</div>
+            <div>Nowgong</div>
+            <div>Orchha</div>
+            <div>Panna</div>
+            <div>Raisen</div>
+            <div>Rajgarh</div>
+            <div>Ratlam</div>
+            <div>Rewa</div>
+            <div>Sagar</div>
+            <div>Sarangpur</div>
+            <div>Satna</div>
+            <div>Sehore</div>
+            <div>Seoni</div>
+            <div>Shahdol</div>
+            <div>Shajapur</div>
+            <div>Sheopur</div>
+            <div>Shivpuri</div>
+            <div>Ujjain</div>
+            <div>Vidisha</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Maharashtra</p>
+          <div class="cities">
+            <div>Ahmadnagar</div>
+            <div>Akola</div>
+            <div>Amravati</div>
+            <div>Aurangabad</div>
+            <div>Bhandara</div>
+            <div>Bhusawal</div>
+            <div>Bid</div>
+            <div>Buldhana</div>
+            <div>Chandrapur</div>
+            <div>Daulatabad</div>
+            <div>Dhule</div>
+            <div>Jalgaon</div>
+            <div>Kalyan</div>
+            <div>Karli</div>
+            <div>Kolhapur</div>
+            <div>Mahabaleshwar</div>
+            <div>Malegaon</div>
+            <div>Matheran</div>
+            <div>Mumbai</div>
+            <div>Nagpur</div>
+            <div>Nanded</div>
+            <div>Nashik</div>
+            <div>Osmanabad</div>
+            <div>Pandharpur</div>
+            <div>Parbhani</div>
+            <div>Pune</div>
+            <div>Ratnagiri</div>
+            <div>Sangli</div>
+            <div>Satara</div>
+            <div>Sevagram</div>
+            <div>Solapur</div>
+            <div>Thane</div>
+            <div>Ulhasnagar</div>
+            <div>Vasai-Virar</div>
+            <div>Wardha</div>
+            <div>Yavatmal</div>
+          </div>
+        </div>
+
+        <div class="state">
+          <p>Manipur</p>
+          <div class="cities">
+            <div>Imphal</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Meghalaya</p>
+          <div class="cities">
+            <div>Cherrapunji</div>
+            <div>Shillong</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Mizoram</p>
+          <div class="cities">
+            <div>Aizawl</div>
+            <div>Lunglei</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Nagaland</p>
+          <div class="cities">
+            <div>Kohima</div>
+            <div>Mon</div>
+            <div>Phek</div>
+            <div>Wokha</div>
+            <div>Zunheboto</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Odisha</p>
+          <div class="cities">
+            <div>Balangir</div>
+            <div>Baleshwar</div>
+            <div>Baripada</div>
+            <div>Bhubaneshwar</div>
+            <div>Brahmapur</div>
+            <div>Cuttack</div>
+            <div>Dhenkanal</div>
+            <div>Kendujhar</div>
+            <div>Konark</div>
+            <div>Koraput</div>
+            <div>Paradip</div>
+            <div>Phulabani</div>
+            <div>Puri</div>
+            <div>Sambalpur</div>
+            <div>Udayagiri</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Puducherry (union territory)</p>
+          <div class="cities">
+            <div>Karaikal</div>
+            <div>Mahe</div>
+            <div>Puducherry</div>
+            <div>Yanam</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Punjab</p>
+          <div class="cities">
+            <div>Amritsar</div>
+            <div>Batala</div>
+            <div>Chandigarh</div>
+            <div>Faridkot</div>
+            <div>Firozpur</div>
+            <div>Gurdaspur</div>
+            <div>Hoshiarpur</div>
+            <div>Jalandhar</div>
+            <div>Kapurthala</div>
+            <div>Ludhiana</div>
+            <div>Nabha</div>
+            <div>Patiala</div>
+            <div>Rupnagar</div>
+            <div>Sangrur</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Rajasthan</p>
+          <div class="cities">
+            <div>Abu</div>
+            <div>Ajmer</div>
+            <div>Alwar</div>
+            <div>Amer</div>
+            <div>Barmer</div>
+            <div>Beawar</div>
+            <div>Bharatpur</div>
+            <div>Bhilwara</div>
+            <div>Bikaner</div>
+            <div>Bundi</div>
+            <div>Chittaurgarh</div>
+            <div>Churu</div>
+            <div>Dhaulpur</div>
+            <div>Dungarpur</div>
+            <div>Ganganagar</div>
+            <div>Hanumangarh</div>
+            <div>Jaipur</div>
+            <div>Jaisalmer</div>
+            <div>Jalor</div>
+            <div>Jhalawar</div>
+            <div>Jhunjhunu</div>
+            <div>Jodhpur</div>
+            <div>Kishangarh</div>
+            <div>Kota</div>
+            <div>Merta</div>
+            <div>Nagaur</div>
+            <div>Nathdwara</div>
+            <div>Pali</div>
+            <div>Phalodi</div>
+            <div>Pushkar</div>
+            <div>Sawai Madhopur</div>
+            <div>Shahpura</div>
+            <div>Sikar</div>
+            <div>Sirohi</div>
+            <div>Tonk</div>
+            <div>Udaipur</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Sikkim</p>
+          <div class="cities">
+            <div>Gangtok</div>
+            <div>Gyalshing</div>
+            <div>Lachung</div>
+            <div>Mangan</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Tamil Nadu</p>
+          <div class="cities">
+            <div>Arcot</div>
+            <div>Chengalpattu</div>
+            <div>Chennai</div>
+            <div>Chidambaram</div>
+            <div>Coimbatore</div>
+            <div>Cuddalore</div>
+            <div>Dharmapuri</div>
+            <div>Dindigul</div>
+            <div>Erode</div>
+            <div>Kanchipuram</div>
+            <div>Kanniyakumari</div>
+            <div>Kodaikanal</div>
+            <div>Kumbakonam</div>
+            <div>Madurai</div>
+            <div>Mamallapuram</div>
+            <div>Nagappattinam</div>
+            <div>Nagercoil</div>
+            <div>Palayamkottai</div>
+            <div>Pudukkottai</div>
+            <div>Rajapalayam</div>
+            <div>Ramanathapuram</div>
+            <div>Salem</div>
+            <div>Thanjavur</div>
+            <div>Tiruchchirappalli</div>
+            <div>Tirunelveli</div>
+            <div>Tiruppur</div>
+            <div>Thoothukudi</div>
+            <div>Udhagamandalam</div>
+            <div>Vellore</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Telangana</p>
+          <div class="cities">
+            <div>Hyderabad</div>
+            <div>Karimnagar</div>
+            <div>Khammam</div>
+            <div>Mahbubnagar</div>
+            <div>Nizamabad</div>
+            <div>Sangareddi</div>
+            <div>Warangal</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Tripura</p>
+          <div class="cities">
+            <div>Agartala</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Uttar Pradesh</p>
+          <div class="cities">
+            <div>Agra</div>
+            <div>Aligarh</div>
+            <div>Amroha</div>
+            <div>Ayodhya</div>
+            <div>Azamgarh</div>
+            <div>Bahraich</div>
+            <div>Ballia</div>
+            <div>Banda</div>
+            <div>Bara Banki</div>
+            <div>Bareilly</div>
+            <div>Basti</div>
+            <div>Bijnor</div>
+            <div>Bithur</div>
+            <div>Budaun</div>
+            <div>Bulandshahr</div>
+            <div>Deoria</div>
+            <div>Etah</div>
+            <div>Etawah</div>
+            <div>Faizabad</div>
+            <div>Farrukhabad-cum-Fat ehgarh</div>
+            <div>Fatehpur</div>
+            <div>Fatehpur Sikri</div>
+            <div>Ghaziabad</div>
+            <div>Ghazipur</div>
+            <div>Gonda</div>
+            <div>Gorakhpur</div>
+            <div>Hamirpur</div>
+            <div>Hardoi</div>
+            <div>Hathras</div>
+            <div>Jalaun</div>
+            <div>Jaunpur</div>
+            <div>Jhansi</div>
+            <div>Kannauj</div>
+            <div>Kanpur</div>
+            <div>Lakhimpur</div>
+            <div>Lalitpur</div>
+            <div>Lucknow</div>
+            <div>Mainpuri</div>
+            <div>Mathura</div>
+            <div>Meerut</div>
+            <div>Mirzapur-Vindhyachal</div>
+            <div>Moradabad</div>
+            <div>Muzaffarnagar</div>
+            <div>Partapgarh</div>
+            <div>Pilibhit</div>
+            <div>Prayagraj</div>
+            <div>Rae Bareli</div>
+            <div>Rampur</div>
+            <div>Saharanpur</div>
+            <div>Sambhal</div>
+            <div>Shahjahanpur</div>
+            <div>Sitapur</div>
+            <div>Sultanpur</div>
+            <div>Tehri</div>
+            <div>Varanasi</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>Uttarakhand</p>
+          <div class="cities">
+            <div>Almora</div>
+            <div>Dehra Dun</div>
+            <div>Haridwar</div>
+            <div>Mussoorie</div>
+            <div>Nainital</div>
+            <div>Pithoragarh</div>
+          </div>
+        </div>
+        <div class="state">
+          <p>West Bengal</p>
+          <div class="cities">
+            <div>Alipore</div>
+            <div>Alipur Duar</div>
+            <div>Asansol</div>
+            <div>Baharampur</div>
+            <div>Bally</div>
+            <div>Balurghat</div>
+            <div>Bankura</div>
+            <div>Baranagar</div>
+            <div>Barasat</div>
+            <div>Barrackpore</div>
+            <div>Basirhat</div>
+            <div>Bhatpara</div>
+            <div>Bishnupur</div>
+            <div>Budge Budge</div>
+            <div>Burdwan</div>
+            <div>Chandernagore</div>
+            <div>Darjeeling</div>
+            <div>Diamond Harbour</div>
+            <div>Dum Dum</div>
+            <div>Durgapur</div>
+            <div>Halisahar</div>
+            <div>Haora</div>
+            <div>Hugli</div>
+            <div>Ingraj Bazar</div>
+            <div>Jalpaiguri</div>
+            <div>Kalimpong</div>
+            <div>Kamarhati</div>
+            <div>Kanchrapara</div>
+            <div>Kharagpur</div>
+            <div>Cooch Behar</div>
+            <div>Kolkata</div>
+            <div>Krishnanagar</div>
+            <div>Malda</div>
+            <div>Midnapore</div>
+            <div>Murshidabad</div>
+            <div>Nabadwip</div>
+            <div>Palashi</div>
+            <div>Panihati</div>
+            <div>Purulia</div>
+            <div>Raiganj</div>
+            <div>Santipur</div>
+            <div>Shantiniketan</div>
+            <div>Shrirampur</div>
+            <div>Siliguri</div>
+            <div>Siuri</div>
+            <div>Tamluk</div>
+            <div>Titagarh</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="footer">
+        This article was most recently revised and updated by Sandeep Kuraria.
+      </div>
+    </section>
+  </body>
+</html>

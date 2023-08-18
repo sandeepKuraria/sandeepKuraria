@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hybrid_Table</title>
+    <style>
+      .nav {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        background-color: rgb(46, 46, 46);
+      }
+      .nav > div > a {
+        text-decoration: none;
+      }
+
+      .left-logo-nav {
+        margin-left: 80px;
+      }
+      .mid-nav {
+        margin: 0px 400px;
+      }
+      .right-nav {
+        margin-top: 20px;
+      }
+      .right-nav > a {
+        color: white;
+        margin: 0px 10px;
+      }
+      .right-nav-cart > a > img {
+        color: white;
+        margin: 0px 10px;
+      }
+      .right-nav > a:hover {
+        color: rgb(47, 140, 47);
+      }
+      .button:hover {
+        background-color: green;
+      }
+      table {
+        margin-top: 60px;
+      }
+      .main-table-div {
+        text-align: center;
+      }
+      .main-field {
+        text-align: center;
+        background-color: rgb(51, 48, 241);
+        font-size: larger;
+      }
+      .parent-field {
+        font-weight: bold;
+        text-align: center;
+        background-color: rgb(255, 242, 0);
+      }
+      .imgAvailability {
+        margin-right: 20px;
+        margin-left: 100px;
+        text-align: center;
+      }
+
+      .imgCode,
+      .imgName,
+      .imgDescription,
+      .imgQuantity,
+      .imgCost,
+      .imgOff,
+      .imgAddToCart {
+        margin-right: 70px;
+        margin-left: 70px;
+      }
+      .green-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: green;
+      }
+      .red-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgba(198, 8, 8, 0.88);
+      }
+      .child-field {
+        text-align: center;
+        background-color: rgba(163, 173, 169, 0.358);
+      }
+      .imgName {
+        text-align: center;
+        margin-right: 70px;
+      }
+      .separator-field {
+        background-color: rgb(41, 14, 248);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav class="nav">
+        <div class="left-logo-nav">
+          <a href="./country.html"
+            ><img
+              src="./logo/home.png"
+              alt="Home logo"
+              width="40px"
+              height="40px"
+          /></a>
+        </div>
+        <div class="mid-nav"></div>
+        <div class="right-nav">
+          <a href="./country.html"> Home</a>
+          <a href="/about">About</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div class="right-nav-cart">
+          <a href="/cart"
+            ><img
+              src="./logo/empty-cart.png"
+              alt="empty-cart"
+              width="40px"
+              height="40px"
+          /></a>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <table border="1">
+        <div class="main-table-div">
+          <tr class="main-field">
+            <th>
+              <img src="./logo/buy.png" alt="" width="50px" height="50px" />
+            </th>
+            <th><pre class="imgCode">Code</pre></th>
+            <th><pre class="imgName">Name</pre></th>
+            <th><pre class="imgDescription">Description</pre></th>
+            <th>
+              <pre
+                class="imgAvailability"
+              >Available<div class="green-circle"></div>Yes<div class="red-circle"></div>No</pre>
+            </th>
+            <th><pre class="imgQuantity">Quantity</pre></th>
+            <th><pre class="imgCost">Cost(In Rs)</pre></th>
+            <th><pre class="imgOff">Off(In %)</pre></th>
+            <th><pre class="imgAddToCart">Add To Cart</pre></th>
+          </tr>
+          <tr class="parent-field">
+            <td>
+              <img
+                src="./Product_image/Gloves-main.png"
+                alt="natural rubber"
+                width="100px"
+                height="120px"
+              />
+            </td>
+            <td>100</td>
+            <td>
+              <pre class="imgName">
+              Gloves
+            </pre
+              >
+            </td>
+            <td>
+              <pre class="imgDescription">
+              Rubber, Disposable
+              insulated, Waterproof
+            </pre
+              >
+            </td>
+            <td>
+              <pre
+                class="imgAvailability"
+              ><div class="green-circle"></div></pre>
+            </td>
+            <td>1</td>
+            <td>1200</td>
+            <td>50%</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="child-field">
+            <td>
+              <img
+                src="./Product_image/gauntlet gloves.jpg"
+                alt="natural rubber"
+                width="100px"
+                height="100px"
+              />
+            </td>
+            <td>1</td>
+            <td>
+              <pre class="imgName">
+               24" Heavy Duty Unlined Natural Rubber Gloves
+              </pre>
+            </td>
+            <td>
+              <pre class="imgDescription">
+                Chemical resistant gauntlet
+                Textured pattern for enhanced grip
+                Smooth nitrile for enhanced chemical protection
+                Fully coated for maximum liquid protection
+                Flock lined for added comfort 
+                
+            </pre
+              >
+            </td>
+            <td>
+              <pre
+                class="imgAvailability"
+              ><div class="green-circle"></div></pre>
+            </td>
+            <td>1Piece</td>
+            <td>1500</td>
+            <td>30%</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="child-field">
+            <td>
+              <img
+                src="./Product_image/Latex gloves.jpg"
+                alt="latex rubber"
+                width="100px"
+                height="100px"
+              />
+            </td>
+            <td>2</td>
+            <td>
+              <pre class="imgName">
+              Natural Latex Rubber Black One Size Fits Most 18" Unlined Gloves
+              </pre>
+            </td>
+
+            <td>
+              <pre class="imgDescription">
+              These black natural latex gloves are perfect for use in a variety of 
+              commercial kitchen and janitorial applications.
+              They feature a convenient embossed grip, perfect for dishwashing at 
+              your restaurant, diner, bar, or concession stand. Long gloves like these
+               keep your kitchen staff dry when washing dishes and pots in your 
+               commercial sink.  
+            </pre
+              >
+            </td>
+            <td>
+              <pre
+                class="imgAvailability"
+              ><div class="green-circle"></div></pre>
+            </td>
+            <td>1Piece</td>
+            <td>2600</td>
+            <td>N/A</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="child-field">
+            <td>
+              <img
+                src="./Product_image/Disposable gloves.jpg"
+                alt="Disposable gloves"
+                width="100px"
+                height="100px"
+              />
+            </td>
+            <td>3</td>
+            <td>
+              <pre class="imgName">
+                Disposable Gloves, Natural Rubber Latex, Powder Free, Natural, S,
+                100 PK
+              </pre>
+            </td>
+
+            <td>
+              <pre class="imgDescription">
+                Disposable Gloves, Acceptable Quality Level (AQL) 4, Color Beige, Cuff Thickness 3.3 mil, 
+                Disposable Glove Type Food-Grade, General Purpose, Finger Thickness 5 mil, Latex-Free No, 
+                Length 9 1/2 in, Material Latex, Palm Thickness 4.5 mil, Powdered/Powder-Free Powder-Free,
+                Silicone-Free No, Standards FDA Regulation 21 CFR 177.2600, Sterile/Non-Sterile Non-Sterile,
+                Texture Grain, Texture Location Full, Glove Treatments Powder-Free, Size- Alpha S, Size - 
+                Numeric 7, Package Quantity 100.  
+            </pre
+              >
+            </td>
+            <td>
+              <pre class="imgAvailability"><div class="red-circle"></div></pre>
+            </td>
+            <td>1Piece</td>
+            <td>50</td>
+            <td>N/A</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="separator-field">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="parent-field">
+            <td>
+              <img
+                src="./Product_image/Gloves-main.png"
+                alt="natural rubber"
+                width="100px"
+                height="120px"
+              />
+            </td>
+            <td>100</td>
+            <td>
+              <pre class="imgName">
+              Gloves
+            </pre
+              >
+            </td>
+            <td>
+              <pre class="imgDescription">
+              Rubber, Disposable
+              insulated, Waterproof
+            </pre
+              >
+            </td>
+            <td>
+              <pre
+                class="imgAvailability"
+              ><div class="green-circle"></div></pre>
+            </td>
+            <td>1</td>
+            <td>1200</td>
+            <td>50%</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="child-field">
+            <td>
+              <img
+                src="./Product_image/gauntlet gloves.jpg"
+                alt="natural rubber"
+                width="100px"
+                height="100px"
+              />
+            </td>
+            <td>1</td>
+            <td>
+              <pre class="imgName">
+               24" Heavy Duty Unlined Natural Rubber Gloves
+              </pre>
+            </td>
+            <td>
+              <pre class="imgDescription">
+                Chemical resistant gauntlet
+                Textured pattern for enhanced grip
+                Smooth nitrile for enhanced chemical protection
+                Fully coated for maximum liquid protection
+                Flock lined for added comfort 
+                
+            </pre
+              >
+            </td>
+            <td>
+              <pre
+                class="imgAvailability"
+              ><div class="green-circle"></div></pre>
+            </td>
+            <td>1Piece</td>
+            <td>1500</td>
+            <td>30%</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="child-field">
+            <td>
+              <img
+                src="./Product_image/Latex gloves.jpg"
+                alt="latex rubber"
+                width="100px"
+                height="100px"
+              />
+            </td>
+            <td>2</td>
+            <td>
+              <pre class="imgName">
+              Natural Latex Rubber Black One Size Fits Most 18" Unlined Gloves
+              </pre>
+            </td>
+
+            <td>
+              <pre class="imgDescription">
+              These black natural latex gloves are perfect for use in a variety of 
+              commercial kitchen and janitorial applications.
+              They feature a convenient embossed grip, perfect for dishwashing at 
+              your restaurant, diner, bar, or concession stand. Long gloves like these
+               keep your kitchen staff dry when washing dishes and pots in your 
+               commercial sink.  
+            </pre
+              >
+            </td>
+            <td>
+              <pre
+                class="imgAvailability"
+              ><div class="green-circle"></div></pre>
+            </td>
+            <td>1Piece</td>
+            <td>2600</td>
+            <td>N/A</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="child-field">
+            <td>
+              <img
+                src="./Product_image/Disposable gloves.jpg"
+                alt="Disposable gloves"
+                width="100px"
+                height="100px"
+              />
+            </td>
+            <td>3</td>
+            <td>
+              <pre class="imgName">
+                Disposable Gloves, Natural Rubber Latex, Powder Free, Natural, S,
+                100 PK
+              </pre>
+            </td>
+
+            <td>
+              <pre class="imgDescription">
+                Disposable Gloves, Acceptable Quality Level (AQL) 4, Color Beige, Cuff Thickness 3.3 mil, 
+                Disposable Glove Type Food-Grade, General Purpose, Finger Thickness 5 mil, Latex-Free No, 
+                Length 9 1/2 in, Material Latex, Palm Thickness 4.5 mil, Powdered/Powder-Free Powder-Free,
+                Silicone-Free No, Standards FDA Regulation 21 CFR 177.2600, Sterile/Non-Sterile Non-Sterile,
+                Texture Grain, Texture Location Full, Glove Treatments Powder-Free, Size- Alpha S, Size - 
+                Numeric 7, Package Quantity 100.  
+            </pre
+              >
+            </td>
+            <td>
+              <pre class="imgAvailability"><div class="red-circle"></div></pre>
+            </td>
+            <td>1Piece</td>
+            <td>50</td>
+            <td>N/A</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="separator-field">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="parent-field">
+            <td>
+              <img
+                src="./Product_image/Gloves-main.png"
+                alt="natural rubber"
+                width="100px"
+                height="120px"
+              />
+            </td>
+            <td>100</td>
+            <td>
+              <pre class="imgName">
+              Gloves
+            </pre
+              >
+            </td>
+            <td>
+              <pre class="imgDescription">
+              Rubber, Disposable
+              insulated, Waterproof
+            </pre
+              >
+            </td>
+            <td>
+              <pre
+                class="imgAvailability"
+              ><div class="green-circle"></div></pre>
+            </td>
+            <td>1</td>
+            <td>1200</td>
+            <td>50%</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="child-field">
+            <td>
+              <img
+                src="./Product_image/gauntlet gloves.jpg"
+                alt="natural rubber"
+                width="100px"
+                height="100px"
+              />
+            </td>
+            <td>1</td>
+            <td>
+              <pre class="imgName">
+               24" Heavy Duty Unlined Natural Rubber Gloves
+              </pre>
+            </td>
+            <td>
+              <pre class="imgDescription">
+                Chemical resistant gauntlet
+                Textured pattern for enhanced grip
+                Smooth nitrile for enhanced chemical protection
+                Fully coated for maximum liquid protection
+                Flock lined for added comfort 
+                
+            </pre
+              >
+            </td>
+            <td>
+              <pre
+                class="imgAvailability"
+              ><div class="green-circle"></div></pre>
+            </td>
+            <td>1Piece</td>
+            <td>1500</td>
+            <td>30%</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="child-field">
+            <td>
+              <img
+                src="./Product_image/Latex gloves.jpg"
+                alt="latex rubber"
+                width="100px"
+                height="100px"
+              />
+            </td>
+            <td>2</td>
+            <td>
+              <pre class="imgName">
+              Natural Latex Rubber Black One Size Fits Most 18" Unlined Gloves
+              </pre>
+            </td>
+
+            <td>
+              <pre class="imgDescription">
+              These black natural latex gloves are perfect for use in a variety of 
+              commercial kitchen and janitorial applications.
+              They feature a convenient embossed grip, perfect for dishwashing at 
+              your restaurant, diner, bar, or concession stand. Long gloves like these
+               keep your kitchen staff dry when washing dishes and pots in your 
+               commercial sink.  
+            </pre
+              >
+            </td>
+            <td>
+              <pre
+                class="imgAvailability"
+              ><div class="green-circle"></div></pre>
+            </td>
+            <td>1Piece</td>
+            <td>2600</td>
+            <td>N/A</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="child-field">
+            <td>
+              <img
+                src="./Product_image/Disposable gloves.jpg"
+                alt="Disposable gloves"
+                width="100px"
+                height="100px"
+              />
+            </td>
+            <td>3</td>
+            <td>
+              <pre class="imgName">
+                Disposable Gloves, Natural Rubber Latex, Powder Free, Natural, S,
+                100 PK
+              </pre>
+            </td>
+
+            <td>
+              <pre class="imgDescription">
+                Disposable Gloves, Acceptable Quality Level (AQL) 4, Color Beige, Cuff Thickness 3.3 mil, 
+                Disposable Glove Type Food-Grade, General Purpose, Finger Thickness 5 mil, Latex-Free No, 
+                Length 9 1/2 in, Material Latex, Palm Thickness 4.5 mil, Powdered/Powder-Free Powder-Free,
+                Silicone-Free No, Standards FDA Regulation 21 CFR 177.2600, Sterile/Non-Sterile Non-Sterile,
+                Texture Grain, Texture Location Full, Glove Treatments Powder-Free, Size- Alpha S, Size - 
+                Numeric 7, Package Quantity 100.  
+            </pre
+              >
+            </td>
+            <td>
+              <pre class="imgAvailability"><div class="red-circle"></div></pre>
+            </td>
+            <td>1Piece</td>
+            <td>50</td>
+            <td>N/A</td>
+            <td>
+              <pre><button class="button" type="button" title="Add this item">Add</button><span> </span><button class="button" type="button" title="Remove this item">Remove</button></pre>
+            </td>
+          </tr>
+          <tr class="separator-field">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </div>
+      </table>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layout</title>
+
+    <style>
+        div {
+            background-color: rgb(209, 209, 209);
+            color: red;
+        }
+
+        .boder {
+            border: 2px solid blue;
+            margin: 5px;
+        }
+
+        .header {
+            padding: 5px 50px;
+            text-align: center;
+            color: blue;
+        }
+
+        .menu {
+            padding: 5px 50px;
+            text-align: center;
+        }
+
+        .main-box {
+            display: flex;
+
+        }
+
+        .footer {
+            text-align: center;
+
+        }
+
+        .box-a {
+            width: 50%;
+            text-align: center;
+
+            border: 2px solid red;
+            margin: 2px;
+        }
+
+        .box-b {
+            width: 50%;
+            text-align: center;
+
+            border: 2px solid red;
+            margin: 2px;
+
+
+        }
+
+        .navbar {
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+
+
+        }
+
+
+        ul>li {
+            margin: 0px 10px;
+            background-color: blue;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 10px;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul>li:hover{
+            background-color: red;
+            scale: 1.1;
+            border-radius: 1px;
+
+        }
+
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!-- this is heder section  -->
+    <section>
+        <div class="header boder">
+
+
+            <!-- <marquee behavior="" direction=""> -->
+                <h4>Header</h4>
+            <!-- </marquee> -->
+
+        </div>
+    </section>
+
+    <section>
+        <div class="menu boder">
+            <ul class="navbar">
+                <li> <a href="./demo.html">Home</a> </li>
+                <li> <a href="">Contact</a> </li>
+                <li> <a href="">About</a> </li>
+                <li> <a href="">Call Us</a> </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="main-box boder">
+
+            <div class="box-a">
+                <h4>box A</h4>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque rerum, corrupti perspiciatis
+                    sapiente debitis ab quisquam eum quo quaerat voluptatem fugit incidunt reiciendis ipsa facilis
+                    adipisci suscipit praesentium repellendus pariatur. Eum accusamus tempore earum ad omnis libero
+                    consequatur voluptatem, animi laboriosam consequuntur ut, eligendi accusantium cumque incidunt sed
+                    non eius obcaecati fugit voluptates illo eos voluptas nihil ipsa et! Eaque, eveniet.</p>
+
+            </div>
+
+            <div class="box-b">
+                <h4>box B</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+        <div class="footer boder">
+            <h4>Footer</h4>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
