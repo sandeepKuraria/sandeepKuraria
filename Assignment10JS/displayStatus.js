@@ -10,16 +10,32 @@ var library = [
     title: "Walter Isaacson",
     readingStatus: true,
   },
+  {
+    author: "Sandy",
+    title: "dharmo rakshati rakshitah",
+    readingStatus: true,
+  },
+  {
+    author: "luke",
+    title: "god bless you!",
+    readingStatus: false,
+  },
 ];
 
-//iterating over library array elements and fetching array objects using indexes to display data in displayReadingStatus variable.
+//creating empty array trueLibrary
+var trueLibrary = [];
+//iterating over library array elements and fetching array objects using indexes to display data in readingStatusObject variable.
 for (let i = 0; i < library.length; i++) {
-  const displayReadingStatus =
-    library[i].author +
-    ", " +
-    library[i].title +
-    ", " +
-    library[i].readingStatus +
-    ".    ";
-  console.log(displayReadingStatus);
+  if (library[i].readingStatus === true) {
+    //initialising readingStatusObject object with its keys and values
+    var readingStatusObject = {
+      author: library[i].author,
+      title: library[i].title,
+      readingStatus: library[i].readingStatus,
+    };
+    //pushing only these objects which have readingStatus is true not false in a newly created trueLibrary array.
+    trueLibrary.push(readingStatusObject);
+  }
 }
+//using JSON.stringify(value, replacer, space) to represent output in JSON format.
+console.log(JSON.stringify(trueLibrary, null, 10));
