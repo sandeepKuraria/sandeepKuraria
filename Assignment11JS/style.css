@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(205, 99, 80) !important;
+  color: white;
+}
+.header,
+.footer {
+  text-align: center;
+  background-color: aquamarine;
+}
+.aside {
+  text-align: center;
+  background-color: aquamarine;
+  margin-right: 25px;
+}
+
+.article {
+  text-align: center;
+  background-color: tomato;
+}
+.articleh2 {
+  padding-top: 150px;
+}
+.img-fluid {
+  width: 200px;
+  height: 200px;
+}
