@@ -1,7 +1,7 @@
 function reverseNumber(n) {
-  for (let i = n; i > 0; i--) {
-    console.log(i);
-  }
+  const array = n.toString().split("");
+  const reverse = array.reverse().join("");
+  console.log("Reversed Number is : " + reverse);
 }
-const n = 10;
+const n = prompt("Enter a number:");
 reverseNumber(n);
