@@ -1,0 +1,17 @@
+.rowColor {
+  background-color: orangered;
+  color: orangered;
+}
+.blank {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  font-weight: 400;
+  color: black;
+  border-bottom: 1px solid rgb(195, 189, 189);
+}
+.headerColor {
+  background-color: rgb(230, 234, 236);
+}
+.tableHeadColor {
+  background-color: orangered;
+}

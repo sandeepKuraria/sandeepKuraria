@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVOICE - TEMPLATE</title>
+    <!-- Bootstrap css added -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- css linked here -->
+    <link rel="stylesheet" href="./invoiceTemplate.css" />
+  </head>
+  <body>
+    <!-- Bootstrap JS added -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- OrangeRed Heading row-bar -->
+    <section>
+      <div class="container-fluid">
+        <div class="row rowColor">.</div>
+      </div>
+      <!-- Header -->
+      <div class="container-fluid border border-1 pt-3 headerColor">
+        <div class="row">
+          <!-- Logo used here -->
+          <div class="col-1 me-5">
+            <img src="./logo/invoice.png" style="width: 100px" alt="logo" />
+          </div>
+          <!-- Company name address contact details -->
+          <div class="col-2 lh-lg">
+            <div class="col fw-bold">Your Company Name</div>
+            <div class="col fs-0 fw-light">Your address</div>
+            <div class="col fs-0 fw-light">Your contact details</div>
+          </div>
+          <!-- blank column -->
+          <div class="col-5"></div>
+          <!-- INVOICE DATE and  INVOICE NO. -->
+          <div class="col-3 lh-lg pe-0 mt-3 pb-4">
+            <div class="col fs-3">INVOICE</div>
+            <div class="col me-2 blank text-md-center mt-3">DATE</div>
+            <div class="col me-2 blank text-md-center">INVOICE NO.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Payment-terms Bill-to, Shipment-to content-->
+    <section>
+      <div class="container-fluid">
+        <div class="row mt-3">
+          <div class="col text-md-end fs-0">
+            Payment terms (due on receipt, due in X days)
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <div class="fw-bold blank">BILL NO</div>
+            <div>Contact Name</div>
+            <div>Client Company Name</div>
+            <div>Address</div>
+            <div>Phone</div>
+            <div>Email</div>
+          </div>
+          <div class="col">
+            <div class="fw-bold blank">SHIP TO</div>
+            <div>Name/Dept</div>
+            <div>Client Company Name</div>
+            <div>Address</div>
+            <div>Phone</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table  -->
+    <section>
+      <!-- Table -->
+      <table class="table table-striped table-bordered table-hover mt-3">
+        <!-- Table header -->
+        <thead class="tableHeadColor">
+          <tr>
+            <th>DESCRIPTION</th>
+            <th>QTY</th>
+            <th>UNIT PRICE</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <!-- Table Body -->
+        <tbody>
+          <tr>
+            <!-- Table data -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <!-- Table data -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <!-- Table data -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <!-- Table data -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <!-- Table data -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <!-- Table data -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <!-- Table data -->
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>0.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Remarks / Payment Instructions: and Balance calculations content-->
+    <section>
+      <div class="container-fluid mt-3">
+        <div class="row">
+          <!-- Left column for Remarks / Payment Instructions -->
+          <div class="col-md-7">Remarks / Payment Instructions:</div>
+          <!-- Right column for Calculations like balance subtotal etc. -->
+          <div class="col-md-3 lh-lg text-md-end px-0">
+            <div class="col">SUBTOTAL</div>
+            <div class="col">DISCOUNT</div>
+            <div class="col">SUBTOTAL LESS DISCOUNT</div>
+            <div class="col">TAX RATE</div>
+            <div class="col">TOTAL TAX</div>
+            <div class="col blank">SHIPPING/HANDLING</div>
+            <div class="col">Balance Due</div>
+          </div>
+          <div class="col-md-2 text-md-end lh-lg px-0">
+            <div class="col blank pt-1">0.00</div>
+            <div class="col blank pt-1">0.00</div>
+            <div class="col blank pt-1">0.00</div>
+            <div class="col blank pt-1">0.00%</div>
+            <div class="col blank pt-1">0.00</div>
+            <div class="col blank pb-0 pt-2">0.00</div>
+            <div class="col blank bg-success pt-2">$ -</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OrangeRed Footer row-bar -->
+    <section>
+      <div class="container-fluid mt-3">
+        <div class="row rowColor">.</div>
+      </div>
+    </section>
+  </body>
+</html>
