@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form-bootstrap5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-info">
+    <div class="container-fluid">
+      <div class="text-center row">
+        <span class="bg-success py-3">Login / Sign-up Form</span>
+      </div>
+      <form class="my-3">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First name"
+              id="firstName"
+            />
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3 ps-3">
+            <label for="middleName" class="form-label">Middle Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Middle name"
+              id="middleName"
+            />
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3 ps-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              id="lastName"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <label for="newAddress" class="form-label">New Address</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="1234 Main St"
+              id="newAddress"
+            />
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3 ps-3">
+            <label for="city" class="form-label">City</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Jabalpur"
+              id="city"
+            />
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3 ps-3">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Chhattisgarh</option>
+              <option selected>Maharashtra</option>
+              <option selected>Delhi</option>
+              <option selected>Rajasthan</option>
+              <option selected>Madhya pradesh</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="India"
+              id="country"
+            />
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3 ps-3">
+            <label for="zip" class="form-label">Zip</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="482002"
+              id="zip"
+            />
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3 ps-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="abc@gmail.com"
+              id="email"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3 ps-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-form-label col-sm-12 col-md-6 col-lg-4 col-xl-4 pt-0">
+            Gender :
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label
+              class="form-check-label col-sm-12 col-md-6 col-lg-4 col-xl-4"
+              for="flexRadioDefault1"
+            >
+              Male
+            </label>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              checked
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              Female
+            </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <label for="customRange1" class="form-label">range</label>
+            <input type="range" class="form-range" id="customRange1" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3">
+            <label for="formFile" class="form-label">Upload your resume</label>
+            <input
+              class="form-control"
+              type="file"
+              accept=".pdf"
+              id="formFile"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3 me-2 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
