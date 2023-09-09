@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator - app</title>
+    <!-- external css link -->
+    <link rel="stylesheet" href="./calculator.css" />
+  </head>
+  <body>
+    <!--calculator main div box -->
+    <div class="calculator">
+      <!-- input box to see calculations -->
+      <input type="text" placeholder="0" id="inputBox" class="inputBox" />
+
+      <div>
+        <!-- All clear button -->
+        <button class="operatorBtn" onclick="allClearDisplay('')">AC</button>
+        <!-- delete button -->
+        <button class="operatorBtn" onclick="del()">DEL</button>
+        <button class="operatorBtn" onclick="appendToInputBox('%')">%</button>
+        <button class="operatorBtn" onclick="appendToInputBox('/')">/</button>
+      </div>
+      <div>
+        <button onclick="appendToInputBox('7')">7</button>
+        <button onclick="appendToInputBox('8')">8</button>
+        <button onclick="appendToInputBox('9')">9</button>
+        <button class="operatorBtn" onclick="appendToInputBox('*')">*</button>
+      </div>
+      <div>
+        <button onclick="appendToInputBox('4')">4</button>
+        <button onclick="appendToInputBox('5')">5</button>
+        <button onclick="appendToInputBox('6')">6</button>
+        <button class="operatorBtn" onclick="appendToInputBox('-')">-</button>
+      </div>
+      <div>
+        <button onclick="appendToInputBox('1')">1</button>
+        <button onclick="appendToInputBox('2')">2</button>
+        <button onclick="appendToInputBox('3')">3</button>
+        <button class="operatorBtn" onclick="appendToInputBox('+')">+</button>
+      </div>
+      <div>
+        <button onclick="appendToInputBox('00')">00</button>
+        <button onclick="appendToInputBox('0')">0</button>
+        <button onclick="appendToInputBox('.')">.</button>
+        <!-- = equals to button -->
+        <button class="equalBtn" onclick="calculateResult()">=</button>
+      </div>
+    </div>
+    <!-- external js link -->
+    <script src="./calculator.js"></script>
+  </body>
+</html>
